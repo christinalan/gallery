@@ -20,10 +20,6 @@ export const routes = [
     {
       path: "birbs",
       element: <Birbs />,
-    },
-    {
-      path: "endonesia",
-      element: <Endonesia />
     }
 
 ]
@@ -42,6 +38,10 @@ const router = createBrowserRouter([
         path: "birbs",
         element: <Birbs />,
       },
+      {
+        path: "endonesia",
+        element: <Endonesia />
+      }
     ]
   },
   

@@ -1,16 +1,14 @@
 import BaseProject from './Project'
-import birbs_logo from '../assets/birbs_logo.png'
+import endonesia_logo from '../assets/endonesia_logo.png'
 import endonesia from '../assets/endonesia.png'
 
 const Endonesia = () => {
     const projectData = {
-        stack: "React, React Router, Tailwind, Firebase",
-        link: "https://fir-practice-4f291.web.app/",
-        description: ` As an active and passionate birder, I’m a fan of Merlin Bird ID, an application created by Cornell Lab.
-        However, finding it difficult to quickly search for recently-spotted birds in any region of the world,
-        both on their website and mobile application, I combined Cornell's and Wikipedia's API to create a mini library. It's simple way to
-        discover new birds anywhere in the world, along with an image and fact from Wikipedia.`,
-        logo: birbs_logo,
+        stack: "React, React Router, Soundcloud, Figma",
+        link: "https://endonesia.web.app/mixes",
+        description: `Website for a NYC and Seoul based label and mix series, Endonesia. This project involved building a 
+        custom music player with Soundcloud's widget, and incorporating Bandcamp API for label releases.`,
+        logo: endonesia_logo,
         image1: ``,
         info1: ``,
         image2: '',
@@ -22,7 +20,7 @@ const Endonesia = () => {
         <div className="project">
             <BaseProject projectData={projectData} />
             <div className="more-info flex flex-col sm:flex-row items-center mt-0">
-                <img className="max-w-sm sm:max-w-xl rounded-3xl" src={birbs2} alt="image of project"/>
+                <img className="max-w-sm sm:max-w-lg rounded-3xl" src={endonesia} alt="image of project"/>
             </div>
         </div>
     )
