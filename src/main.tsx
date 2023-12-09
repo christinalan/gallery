@@ -26,20 +26,20 @@ export const routes = [
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/gallery/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "Maplibs",
+        path: "/gallery/Maplibs",
         element: <MapLibs />,
       },
       {
-        path: "birbs",
+        path: "/gallery/birbs",
         element: <Birbs />,
       },
       {
-        path: "endonesia",
+        path: "/gallery/endonesia",
         element: <Endonesia />
       }
     ]

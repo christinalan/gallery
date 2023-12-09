@@ -79,10 +79,10 @@ const Root = () => {
             </div>
             <nav className={`${isMenuVisible ? 'visible relative' : 'invisible fixed'} flex flex-col max-w-md sm:w-96 lg:w-screen items-stretch px-4 sm:px-8 mx-2 sm:mt-10`}>
                 <ul className="ml-0 px-0 text-2xl sm:text-xl list-none" onClick={() => isMobile ? setMenuVisible(false) : setMenuVisible(true)}>
-                    <Link className="navLink" to={`/`} onClick={handleAboutInfo}><li>About</li></Link>
-                    <Link className="navLink" to={`endonesia`}><li>Endonesia</li></Link>
-                    <Link className="navLink" to={`maplibs`}><li>Maplibs</li></Link>
-                    <Link className="navLink" to={`birbs`}><li>Birbs</li></Link>
+                    <Link className="navLink" to={`/gallery/`} onClick={handleAboutInfo}><li>About</li></Link>
+                    <Link className="navLink" to={`/gallery/endonesia`}><li>Endonesia</li></Link>
+                    <Link className="navLink" to={`/gallery/maplibs`}><li>Maplibs</li></Link>
+                    <Link className="navLink" to={`/gallery/birbs`}><li>Birbs</li></Link>
                 </ul>
               </nav>
           </div>
