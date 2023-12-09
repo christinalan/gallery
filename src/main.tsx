@@ -5,10 +5,14 @@ import {
   createBrowserRouter,
   RouterProvider, 
 } from "react-router-dom"
+import ErrorPage from './error-page.tsx'
 import MapLibs from './components/Maplibs.tsx'
 import Birbs from './components/Birbs.tsx'
 import Endonesia from './components/Endonesia.tsx'
-import ErrorPage from './error-page.tsx'
+import NonClub from './components/NonClub.tsx'
+import Chatnimal from './components/Chatnimal.tsx'
+import WorldUpstream from './components/WorldUpstream.tsx'
+
 
 export const routes = [
   {path: "/", element: <Root />},
@@ -41,6 +45,18 @@ const router = createBrowserRouter([
       {
         path: "/gallery/endonesia",
         element: <Endonesia />
+      },
+      {
+        path: "/gallery/nonclub",
+        element: <NonClub />
+      },
+      {
+        path: "/gallery/worldupstream",
+        element: <WorldUpstream />
+      },
+      {
+        path: "/gallery/chatnimal",
+        element: <Chatnimal />
       }
     ]
   },

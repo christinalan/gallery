@@ -81,8 +81,11 @@ const Root = () => {
                 <ul className="ml-0 px-0 text-2xl sm:text-xl list-none" onClick={() => isMobile ? setMenuVisible(false) : setMenuVisible(true)}>
                     <Link className="navLink" to={`/gallery/`} onClick={handleAboutInfo}><li>About</li></Link>
                     <Link className="navLink" to={`/gallery/endonesia`}><li>Endonesia</li></Link>
-                    <Link className="navLink" to={`/gallery/maplibs`}><li>Maplibs</li></Link>
                     <Link className="navLink" to={`/gallery/birbs`}><li>Birbs</li></Link>
+                    <Link className="navLink" to={`/gallery/maplibs`}><li>Maplibs</li></Link>
+                    <Link className="navLink" to={`/gallery/nonclub`}><li>nonclub</li></Link>
+                    <Link className="navLink" to={`/gallery/worldupstream`}><li>World Upstream</li></Link>
+                    <Link className="navLink" to={`/gallery/chatnimal`}><li>Chatnimal</li></Link>
                 </ul>
               </nav>
           </div>
@@ -106,7 +109,7 @@ const Root = () => {
                   {/* <Outlet /> */}
                 </CSSTransition>
               </SwitchTransition>
-                  {window.location.pathname === '/' && (<About />)}
+                  {window.location.pathname === '/gallery/' && (<About />)}
               </div>
             </div>
           </div>
