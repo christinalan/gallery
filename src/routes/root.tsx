@@ -81,8 +81,11 @@ const Root = () => {
                 <ul className="ml-0 px-0 text-2xl sm:text-xl list-none" onClick={() => isMobile ? setMenuVisible(false) : setMenuVisible(true)}>
                     <Link className="navLink" to={`/`} onClick={handleAboutInfo}><li>About</li></Link>
                     <Link className="navLink" to={`endonesia`}><li>Endonesia</li></Link>
-                    <Link className="navLink" to={`maplibs`}><li>Maplibs</li></Link>
                     <Link className="navLink" to={`birbs`}><li>Birbs</li></Link>
+                    <Link className="navLink" to={`maplibs`}><li>Maplibs</li></Link>
+                    <Link className="navLink" to={`nonclub`}><li>nonclub</li></Link>
+                    <Link className="navLink" to={`worldupstream`}><li>World Upstream</li></Link>
+                    <Link className="navLink" to={`chatnimal`}><li>Chatnimal</li></Link>
                 </ul>
               </nav>
           </div>
