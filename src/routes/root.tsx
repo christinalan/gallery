@@ -36,10 +36,10 @@ const Root = () => {
       { 
         y: 15,
         ease: "sine.InOut",
-        duration: 1,
+        duration: 1.2,
         opacity: 0,
         stagger: {
-          amount: 0.2
+          amount: 0.5
         }
       }
     );
@@ -49,7 +49,7 @@ const Root = () => {
     gsap.to(
       ".navLink",
       {
-        duration: 2,
+        duration: 0.5,
         y: -15,
         ease: "sine.out",
         stagger: {

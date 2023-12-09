@@ -7,6 +7,7 @@ import {
 } from "react-router-dom"
 import MapLibs from './components/Maplibs.tsx'
 import Birbs from './components/Birbs.tsx'
+import Endonesia from './components/Endonesia.tsx'
 import ErrorPage from './error-page.tsx'
 
 export const routes = [
@@ -19,6 +20,10 @@ export const routes = [
     {
       path: "birbs",
       element: <Birbs />,
+    },
+    {
+      path: "endonesia",
+      element: <Endonesia />
     }
 
 ]
