@@ -93,7 +93,7 @@ const Root = () => {
               <SwitchTransition>
                 <CSSTransition
                     key={locationLink.pathname}
-                    //@ts-ignore
+                    //@ts-expect-error nodeRefs is valid 
                     nodeRef={nodeRefs.current[locationLink.pathname]}
                     timeout={300}
                     classNames="fade"
