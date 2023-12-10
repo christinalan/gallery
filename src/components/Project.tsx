@@ -11,7 +11,8 @@ interface projectDataType {
         image1: string 
         info1: string 
         image2: string 
-        info2: string 
+        info2: string
+
 
     }
 }
@@ -25,15 +26,15 @@ const BaseProject = ({projectData}: projectDataType) => {
                     <a className="underline text-lg sm:text-sm font-extralight italic" href={projectData.link}>Link</a>
                 </div>
     
-                <img className="w-20 opacity-80" src={projectData.logo} alt="logo"/>
+                {projectData.logo ? <img className="w-20 opacity-80" src={projectData.logo} alt="logo"/>: ''}
             </div>
             <h4 className="project-description mt-5 sm:mt-8 font-normal text-lg sm:text-sm leading-8 sm:leading-8">{projectData.description}</h4>
             <div className={`${projectData.image1 ? 'mt-5' : 'mt-0'} more-info flex flex-col sm:flex-row items-center gap-4 text-lg sm:text-sm`}>
-                {projectData.image1 ? <img className="max-w-sm rounded-3xl" src={projectData.image1} alt="image of project"/> : ''}
+                {projectData.image1 ? <img className="max-w-sm rounded-3xl px-2" src={projectData.image1} alt="image of project"/> : ''}
                 <p>{projectData.info1}</p>
             </div>
-            <div className="more-info flex flex-col sm:flex-row items-center gap-2 text-lg sm:text-sm mt-8">
-                {projectData.image2 ? <img className="max-w-sm rounded-3xl" src={projectData.image2} alt="image of project"/> : ''}
+            <div className="more-info flex flex-col sm:flex-row items-center gap-2 text-lg sm:text-sm mt-5">
+                {projectData.image2 ? <img className="max-w-sm rounded-3xl px-2" src={projectData.image2} alt="image of project"/> : ''}
                 <p>{projectData.info2}</p>
             </div>
         

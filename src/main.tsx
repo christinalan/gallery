@@ -12,6 +12,7 @@ import Endonesia from './components/Endonesia.tsx'
 import NonClub from './components/NonClub.tsx'
 import Chatnimal from './components/Chatnimal.tsx'
 import WorldUpstream from './components/WorldUpstream.tsx'
+import Freesound from './components/Freesound.tsx'
 
 
 export const routes = [
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "chatnimal",
         element: <Chatnimal />
+      },
+      {
+        path: "freesound",
+        element: <Freesound />
       }
     ]
   },

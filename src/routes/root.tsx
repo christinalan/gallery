@@ -34,9 +34,9 @@ const Root = () => {
     gsap.from(
       ".project",
       { 
-        y: 15,
+        y: 5,
         ease: "sine.InOut",
-        duration: 1.2,
+        duration: 1,
         opacity: 0,
         stagger: {
           amount: 0.5
@@ -50,7 +50,7 @@ const Root = () => {
       ".navLink",
       {
         duration: 0.5,
-        y: -15,
+        y: -10,
         ease: "sine.out",
         stagger: {
           amount: 0.2
@@ -59,13 +59,9 @@ const Root = () => {
     );
   };
 
-  // const consoleInfo = () => {
-  //   console.log(locationLink.pathname, currentOutlet, nodeRefs);
-  // }
-
     return (
       <Box sx={{ flexGrow: 1 }}>
-        <div className="full-app flex flex-col items-stretch sm:flex-row sm:justify-start sm:items-start">
+        <div className="full-app flex flex-col items-stretch sm:flex-row sm:justify-start sm:items-start text-neutral-300">
           <div className="header">
             <Link to={`/`}></Link>
           <div className="menu flex flex-col">
@@ -86,6 +82,7 @@ const Root = () => {
                     <Link className="navLink" to={`nonclub`}><li>nonclub</li></Link>
                     <Link className="navLink" to={`worldupstream`}><li>World Upstream</li></Link>
                     <Link className="navLink" to={`chatnimal`}><li>Chatnimal</li></Link>
+                    <Link className="navLink" to={`freesound`}><li>Freesound Landscapes</li></Link>
                 </ul>
               </nav>
           </div>

@@ -20,7 +20,7 @@ const Endonesia = () => {
         <div className="project">
             <BaseProject projectData={projectData} />
             <div className="more-info flex flex-col sm:flex-row items-center mt-0">
-                <img className="max-w-sm sm:max-w-lg rounded-3xl" src={endonesia} alt="image of project"/>
+                <img className="max-w-sm sm:max-w-lg rounded-xl px-5 opacity-80" src={endonesia} alt="image of project"/>
             </div>
         </div>
     )
