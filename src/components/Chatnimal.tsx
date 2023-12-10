@@ -21,7 +21,7 @@ const Chatnimal = () => {
         <div className="project">
             <BaseProject projectData={projectData} />
             <div className="more-info flex flex-col sm:flex-row items-center mt-0">
-                <img className="max-w-sm sm:max-w-xl rounded-3xl" src={chatnimal} alt="image of project"/>
+                <img className="max-w-sm sm:max-w-xl rounded-3xl px-5" src={chatnimal} alt="image of project"/>
             </div>
         </div>
     )
