@@ -27,7 +27,7 @@ const Root = () => {
   const isMobile = window.innerWidth <= 768; 
 
   const handleAboutInfo = () => {
-    navigate('/');
+    navigate('/gallery/');
   }
 
   const onEnter = () => {
@@ -81,8 +81,8 @@ const Root = () => {
                     <Link className="navLink" to={`/gallery/maplibs`}><li>Maplibs</li></Link>
                     <Link className="navLink" to={`/gallery/nonclub`}><li>nonclub</li></Link>
                     <Link className="navLink" to={`/gallery/worldupstream`}><li>World Upstream</li></Link>
-                    <Link className="navLink" to={`sigid`}><li>Sigid Play</li></Link>
-                    <Link className="navLink" to={`sluice`}><li>Sluice</li></Link>
+                    <Link className="navLink" to={`/gallery/sigid`}><li>Sigid Play</li></Link>
+                    <Link className="navLink" to={`/gallery/sluice`}><li>Sluice</li></Link>
                     <Link className="navLink" to={`/gallery/chatnimal`}><li>Chatnimal</li></Link>
                     <Link className="navLink" to={`/gallery/freesound`}><li>Freesound Landscapes</li></Link>
                 </ul>
@@ -105,12 +105,11 @@ const Root = () => {
                     unmountOnExit
                     >
                       <div>{currentOutlet}
-                      {window.location.pathname === '/' && (<About />)}
+                      {window.location.pathname === '/gallery/' && (<About />)}
                       </div>
                   {/* <Outlet /> */}
                 </CSSTransition>
               </SwitchTransition>
-                  {window.location.pathname === '/' && (<About />)}
               </div>
             </div>
           </div>

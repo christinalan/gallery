@@ -65,11 +65,11 @@ const router = createBrowserRouter([
         element: <Freesound />
       },
       {
-        path: "sigid",
+        path: "/gallery/sigid",
         element: <Sigid />
       },
       {
-        path: "sluice",
+        path: "/gallery/sluice",
         element: <Sluice />
       }
     ]
