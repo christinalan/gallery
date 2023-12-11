@@ -6,7 +6,7 @@ import sluice2 from '../assets/sluice2.png'
 
 const Birbs = () => {
     const projectData = {
-        stack: "p5, web audio, freesound API",
+        stack: "Figma, Webgl, Photoshop, Illustrator",
         link: "",
         description: `Design for Sluice, a radio show, and developing audio-visual project based in NYC.`,
         logo: sluice_logo,
