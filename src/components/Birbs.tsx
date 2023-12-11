@@ -5,7 +5,7 @@ import birbs2 from '../assets/birbs2.png'
 
 const Birbs = () => {
     const projectData = {
-        stack: "React, React Router, Tailwind, Firebase",
+        stack: "React, React Router, Typescript, Tailwind, Firebase",
         link: "https://fir-practice-4f291.web.app/",
         description: ` As an active and passionate birder, I’m a fan of Merlin Bird ID, an application created by Cornell Lab.
         However, finding it difficult to quickly search for recently-spotted birds in any region of the world,

@@ -4,7 +4,7 @@ import endonesia from '../assets/endonesia.png'
 
 const Endonesia = () => {
     const projectData = {
-        stack: "React, React Router, Soundcloud, Figma",
+        stack: "React, React Router, Typescript, Soundcloud, Figma",
         link: "https://endonesia.web.app/mixes",
         description: `Website for a NYC and Seoul based label and mix series, Endonesia. This project involved building a 
         custom music player with Soundcloud's widget, and incorporating Bandcamp API for label releases.`,
