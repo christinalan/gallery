@@ -81,6 +81,8 @@ const Root = () => {
                     <Link className="navLink" to={`/gallery/maplibs`}><li>Maplibs</li></Link>
                     <Link className="navLink" to={`/gallery/nonclub`}><li>nonclub</li></Link>
                     <Link className="navLink" to={`/gallery/worldupstream`}><li>World Upstream</li></Link>
+                    <Link className="navLink" to={`sigid`}><li>Sigid Play</li></Link>
+                    <Link className="navLink" to={`sluice`}><li>Sluice</li></Link>
                     <Link className="navLink" to={`/gallery/chatnimal`}><li>Chatnimal</li></Link>
                     <Link className="navLink" to={`/gallery/freesound`}><li>Freesound Landscapes</li></Link>
                 </ul>
@@ -102,11 +104,13 @@ const Root = () => {
                     onEntering={onEnter}
                     unmountOnExit
                     >
-                      <div>{currentOutlet}</div>
+                      <div>{currentOutlet}
+                      {window.location.pathname === '/' && (<About />)}
+                      </div>
                   {/* <Outlet /> */}
                 </CSSTransition>
               </SwitchTransition>
-                  {window.location.pathname === '/gallery/' && (<About />)}
+                  {window.location.pathname === '/' && (<About />)}
               </div>
             </div>
           </div>

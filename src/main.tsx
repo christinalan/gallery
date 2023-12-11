@@ -13,7 +13,8 @@ import NonClub from './components/NonClub.tsx'
 import Chatnimal from './components/Chatnimal.tsx'
 import WorldUpstream from './components/WorldUpstream.tsx'
 import Freesound from './components/Freesound.tsx'
-
+import Sigid from './components/Sigid.tsx'
+import Sluice from './components/Sluice.tsx'
 
 export const routes = [
   {path: "/", element: <Root />},
@@ -62,6 +63,14 @@ const router = createBrowserRouter([
       {
         path: "/gallery/freesound",
         element: <Freesound />
+      },
+      {
+        path: "sigid",
+        element: <Sigid />
+      },
+      {
+        path: "sluice",
+        element: <Sluice />
       }
     ]
   },
