@@ -23,7 +23,7 @@ const BaseProject = ({projectData}: projectDataType) => {
             <div className="project-header flex justify-around sm:justify-between items-center sm:items-start max-w-sm sm:max-w-3xl text-center gap-1">
                 <div className="header-left text-left leading-6">
                     <p className="project-stack text-lg sm:text-sm font-extralight italic">{projectData.stack}</p>
-                    <a className="underline text-lg sm:text-sm font-extralight italic" href={projectData.link}>Link</a>
+                    {projectData.link ? <a className="underline text-lg sm:text-sm font-extralight italic" href={projectData.link}>Link</a>: ''}
                 </div>
     
                 {projectData.logo ? <img className="w-20 opacity-80" src={projectData.logo} alt="logo"/>: ''}

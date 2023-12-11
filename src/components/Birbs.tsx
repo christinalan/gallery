@@ -1,3 +1,4 @@
+import './style.css';
 import BaseProject from './Project'
 import birbs_logo from '../assets/birbs_logo.png'
 import birbs2 from '../assets/birbs2.png'
@@ -15,14 +16,13 @@ const Birbs = () => {
         info1: ``,
         image2: '',
         info2: ``,
-
     }
 
     return (
         <div className="project">
             <BaseProject projectData={projectData} />
-            <div className="more-info flex flex-col sm:flex-row items-center mt-0">
-                <img className="max-w-sm sm:max-w-xl rounded-2xl px-5 opacity-80" src={birbs2} alt="image of project"/>
+            <div className="more-info flex flex-col sm:flex-row items-center">
+                <img className="margin-special max-w-sm sm:max-w-xl lg:max-w-2xl rounded-xl px-5 md:px-1 opacity-90" src={birbs2} alt="image of project"/>
             </div>
         </div>
     )
