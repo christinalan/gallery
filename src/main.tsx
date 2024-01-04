@@ -15,6 +15,7 @@ import WorldUpstream from './components/WorldUpstream.tsx'
 import Freesound from './components/Freesound.tsx'
 import Sigid from './components/Sigid.tsx'
 import Sluice from './components/Sluice.tsx'
+import UpperWells from './components/UpperWells.tsx'
 
 export const routes = [
   {path: "/", element: <Root />},
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "sluice",
         element: <Sluice />
+      },
+      {
+        path: "upperwells",
+        element: <UpperWells />
       }
     ]
   },

@@ -82,6 +82,7 @@ const Root = () => {
                     <Link className="navLink" to={`nonclub`}><li>nonclub</li></Link>
                     <Link className="navLink" to={`worldupstream`}><li>World Upstream</li></Link>
                     <Link className="navLink" to={`sigid`}><li>Sigid Play</li></Link>
+                    <Link className="navLink" to={`upperwells`}><li>Upper Wells</li></Link>
                     <Link className="navLink" to={`sluice`}><li>Sluice</li></Link>
                     <Link className="navLink" to={`chatnimal`}><li>Chatnimal</li></Link>
                     <Link className="navLink" to={`freesound`}><li>Freesound Landscapes</li></Link>
