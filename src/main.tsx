@@ -16,10 +16,11 @@ import Freesound from './components/Freesound.tsx'
 import Sigid from './components/Sigid.tsx'
 import Sluice from './components/Sluice.tsx'
 import UpperWells from './components/UpperWells.tsx'
+import Daze from './components/Daze.tsx'
+import Bask from './components/Bask.tsx'
 
 export const routes = [
   {path: "/", element: <Root />},
-  
     {
       path: "Maplibs",
       element: <MapLibs />,
@@ -28,7 +29,6 @@ export const routes = [
       path: "birbs",
       element: <Birbs />,
     }
-
 ]
 
 const router = createBrowserRouter([
@@ -42,12 +42,20 @@ const router = createBrowserRouter([
         element: <MapLibs />,
       },
       {
+        path: "bask",
+        element: <Bask />
+      },
+      {
         path: "birbs",
         element: <Birbs />,
       },
       {
         path: "endonesia",
         element: <Endonesia />
+      },
+      {
+        path: "daze",
+        element: <Daze />
       },
       {
         path: "nonclub",
