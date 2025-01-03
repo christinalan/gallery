@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.19",
     "@mui/material": "^5.14.20",
+    "caniuse-lite": "^1.0.30001690",
     "firebase": "^10.7.1",
     "gsap": "^3.12.3",
     "react": "^18.2.0",
